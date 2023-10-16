@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+}
+
+main {
+}
+
+@keyframes animate{
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  height: 32rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid #dadce0;
+  border-radius: 0.5rem;
+}
+
+.top__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glogo {
+  width: 5rem;
+  height: auto;
+}
+
+.box h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: -0.5rem;  
+}
+
+.box .input__box {
+  position: relative;
+}
+
+.box .input__box input{
+  width: 93%;
+  padding: 0.8rem 10px;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.8rem;
+  border: 1px solid #aaaaaa;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.box .input__box label {
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;
+  color:#aaaaaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.forgot button {
+  color: #1a73e8;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.box input[type="submit"] {
+  border: none;
+  color: white;
+  background-color:#1a73e8;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  float: right;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background-color:#2f7fe8;
+}
+
+.box .input__box input:focus ~ label,
+.box .input__box input:valid ~ label,
+.box .input__box input:not([value=""]) ~ label {
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  background-color: white;
+  padding: 0rem 0.5rem;
+}
+
+.box .input__box input:focus {
+  outline: none;
+  border: 0.125rem solid #1a73e8;
+}
+
+.box .input__box input:focus ~ label {
+  color:#1a73e8;
+}
