@@ -78,7 +78,7 @@ main {
   transition: 0.3s;
 }
 
-.forgot button {
+.forgot__password button {
   color: #1a73e8;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
